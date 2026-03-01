@@ -1,30 +1,34 @@
-import foodSvg from "../assets/food.svg"
-import othersSvg from "../assets/others.svg"
-import transportSvg from "../assets/transport.svg"
-import servicesSvg from "../assets/services.svg"
-import accommodationSvg from "../assets/accommodation.svg"
+import foodSvg from "../assets/food.svg"; // ícone para categoria de alimentação
+import othersSvg from "../assets/others.svg"; // ícone para outros
+import transportSvg from "../assets/transport.svg"; // ícone para transporte
+import servicesSvg from "../assets/services.svg"; // ícone para serviços
+import accommodationSvg from "../assets/accommodation.svg"; // ícone para acomodação
 
+// objeto contendo metadados para cada chave de categoria
 export const CATEGORIES = {
   food: {
     name: "Alimentação",
-    icon: foodSvg
+    icon: foodSvg,
   },
   services: {
     name: "Serviços",
-    icon: servicesSvg
+    icon: servicesSvg,
   },
   transport: {
     name: "Transporte",
-    icon: transportSvg
+    icon: transportSvg,
   },
   accommodation: {
     name: "Hospedagem",
-    icon: accommodationSvg
+    icon: accommodationSvg,
   },
-    others: {
+  others: {
     name: "Outros",
-    icon: othersSvg
+    icon: othersSvg,
   },
-}
+};
 
-export const CATEGORIES_KEYS = Object.keys(CATEGORIES) as Array<keyof typeof CATEGORIES>
+// lista de chaves ("food", "services", etc) usada para iterar sobre categorias
+export const CATEGORIES_KEYS = Object.keys(CATEGORIES) as Array<
+  keyof typeof CATEGORIES
+>;

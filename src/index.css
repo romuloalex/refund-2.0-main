@@ -1,36 +1,38 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* traz utilitários do Tailwind; removendo isto quase todo o estilo desaparece */
 
 @theme {
-  --color-gray-100: #1f2523;
-  --color-gray-200: #4d5c57;
-  --color-gray-300: #cdd5d2;
-  --color-gray-400: #e4ece9;
-  --color-gray-500: #f9fbfa;
+  /* define variáveis CSS personalizadas para cores, fontes e tamanhos */
+  --color-gray-100: #1f2523; /* cinza escuro usado em texto/fundo */
+  --color-gray-200: #4d5c57; /* cinza médio */
+  --color-gray-300: #cdd5d2; /* cinza claro */
+  --color-gray-400: #e4ece9; /* cinza mais claro */
+  --color-gray-500: #f9fbfa; /* quase branco */
 
-  --color-green-100: #1f8459;
-  --color-green-200: #2cb178;
+  --color-green-100: #1f8459; /* verde escuro de destaque */
+  --color-green-200: #2cb178; /* verde claro de destaque */
 
-  --default-font-family: "Open Sans", sans-serif;
-
-  --text-xxs: 0.625rem;
+  --default-font-family: "Open Sans", sans-serif; /* pilha de fontes padrão */
+  --text-xxs: 0.625rem; /* tamanho de texto extra‑extra‑pequeno */
 }
 
+/* Personaliza o elemento <select> nativo para ficar consistente entre navegadores */
 select {
-  appearance: none;
-  background-image: url("./assets/chevron-down.svg");
-  background-repeat: no-repeat;
-  background-position: right 0.7rem top 50%;
-  background-size: 1.25rem auto;
+  appearance: none; /* remove a seta padrão */
+  background-image: url("./assets/chevron-down.svg"); /* ícone de seta customizado */
+  background-repeat: no-repeat; /* não repetir o ícone */
+  background-position: right 0.7rem top 50%; /* posiciona o ícone dentro do campo */
+  background-size: 1.25rem auto; /* tamanho do ícone */
 }
 
+/* Estiliza a barra de rolagem em navegadores WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 0.4rem;
+  width: 0.4rem; /* barra de rolagem estreita */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4ece9;
+  background-color: #e4ece9; /* cor do polegar arrastável */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: transparent; /* pista transparente */
 }
